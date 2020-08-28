@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    android:elevation="0dp"
+    android:background="@android:color/transparent"
+    app:cardBackgroundColor="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="end"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_question"
+            android:id="@+id/bot_img"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bot_img"
+            android:id="@+id/user_card"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/bot_back"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="6dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:padding="20dp"
+                android:id="@+id/user_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
